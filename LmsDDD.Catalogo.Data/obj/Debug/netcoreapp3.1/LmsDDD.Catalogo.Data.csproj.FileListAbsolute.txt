@@ -1,0 +1,7 @@
+E:\cursos\dominiosRicos\projetoLmsDDD\LmsDDD\LmsDDD.Catalogo.Data\bin\Debug\netcoreapp3.1\LmsDDD.Catalogo.Data.deps.json
+E:\cursos\dominiosRicos\projetoLmsDDD\LmsDDD\LmsDDD.Catalogo.Data\bin\Debug\netcoreapp3.1\LmsDDD.Catalogo.Data.dll
+E:\cursos\dominiosRicos\projetoLmsDDD\LmsDDD\LmsDDD.Catalogo.Data\obj\Debug\netcoreapp3.1\LmsDDD.Catalogo.Data.csprojAssemblyReference.cache
+E:\cursos\dominiosRicos\projetoLmsDDD\LmsDDD\LmsDDD.Catalogo.Data\obj\Debug\netcoreapp3.1\LmsDDD.Catalogo.Data.AssemblyInfoInputs.cache
+E:\cursos\dominiosRicos\projetoLmsDDD\LmsDDD\LmsDDD.Catalogo.Data\obj\Debug\netcoreapp3.1\LmsDDD.Catalogo.Data.AssemblyInfo.cs
+E:\cursos\dominiosRicos\projetoLmsDDD\LmsDDD\LmsDDD.Catalogo.Data\bin\Debug\netcoreapp3.1\LmsDDD.Catalogo.Domain.dll
+E:\cursos\dominiosRicos\projetoLmsDDD\LmsDDD\LmsDDD.Catalogo.Data\bin\Debug\netcoreapp3.1\LmsDDD.Core.dll
