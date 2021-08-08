@@ -45,6 +45,34 @@ namespace LmsDDD.Catalogo.Domain
             _questoes.Add(questao);
         }
 
+        public void AdicionarQuestaoOpcao(Questao questao, Opcao opcao)
+        {
+           var questaoExistente = _questoes.Find(q => q.Id == questao.Id);
+
+           if (questaoExistente == null) throw new DomainException("A questão não pertence a avaliação");
+            questaoExistente.AdicionarOpcao(opcao);
+
+        }
+
+        public void RemoverQuestaoOpcao(Questao questao, Opcao opcao)
+        {
+            var questaoExistente = _questoes.Find(q => q.Id == questao.Id);
+
+            if (questaoExistente == null) throw new DomainException("A questão não pertence a avaliação");
+            var opcaoExistente = questaoExistente.ObterOpcaoPorId(opcao.Id);
+            if(opcaoExistente == null)
+            questaoExistente.RemoverOpcao(opcao);
+
+        }
+
+        public void RemoverQuestao(Questao questao)
+        {            
+            var questaoExistente = _questoes.Find(q => q.Id == questao.Id);
+
+            if (questaoExistente == null) throw new DomainException("A questão não pertence a avaliação");
+            _questoes.Add(questao);
+        }
+
         public int QuantidadeTotalQuestoes()
         {
             return _questoes.Count;

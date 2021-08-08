@@ -12,17 +12,11 @@ namespace LmsDDD.Catalogo.Domain
         Task<Curso> ObterPorId(Guid id);
 
         Task<IEnumerable<Curso>> ObterPorCategoria(int codigo);
-
         Task<IEnumerable<Categoria>> ObterCategorias();
-
         void Adicionar(Curso curso);
-
         void Atualizar(Curso curso);
         void Adicionar(Categoria categoria);
-
         void Atualizar(Categoria categoria);
-
-
 
     }
 }

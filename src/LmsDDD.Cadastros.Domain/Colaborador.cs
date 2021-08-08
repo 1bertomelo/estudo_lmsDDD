@@ -5,7 +5,7 @@ using System.Text;
 
 namespace LmsDDD.Cadastros.Domain
 {
-    public class Colaborador : Entity
+    public class Colaborador : Entity , IAggregateRoot
     {
         #region Propriedades
         public string Nome { get; private set; }
@@ -17,6 +17,9 @@ namespace LmsDDD.Cadastros.Domain
         public Guid CargoId { get; private set; }
         public Guid EmpresaId { get; private set; }
         public Cargo Cargo { get; private set; }
+        public Empresa Empresa { get; private set; }
+        public Guid? CredencialSistemaId { get; private set; }
+
         public CredencialSistema CredencialSistema { get; private set; }
         #endregion
 
@@ -66,6 +69,11 @@ namespace LmsDDD.Cadastros.Domain
         {
             Cargo = cargo;
             CargoId = cargo.Id;
+        }
+
+        public void AtribuirCredencialSistema(Guid credencialSistemaId)
+        {
+            CredencialSistemaId = credencialSistemaId;
         }
 
         #endregion

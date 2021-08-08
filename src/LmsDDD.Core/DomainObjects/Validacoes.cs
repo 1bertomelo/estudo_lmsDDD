@@ -189,5 +189,25 @@ namespace LmsDDD.Core.DomainObjects
             if (!reg.IsMatch(url))
                 throw new DomainException(mensagem);
         }
+
+
+        public static void ValidarQuantidadeMinimaNumeros(string valor, int tamanhoMinimo, string mensagem)
+        {
+            throw new ArgumentException(mensagem);
+
+        }
+
+        public static void ValidarQuantidadeMinimaLetrasMaiusculas(string valor, int tamanhoMinimo, string mensagem)
+        {
+            throw new ArgumentException(mensagem);
+
+        }
+
+        public static void ValidarQuantidadeMinimaCaracteresEspeciais(string valor, int tamanhoMinimo, string mensagem)
+        {
+            throw new ArgumentException(mensagem);
+
+        }
+
     }
 }

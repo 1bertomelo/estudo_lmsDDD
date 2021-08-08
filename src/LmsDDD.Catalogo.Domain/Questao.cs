@@ -12,7 +12,10 @@ namespace LmsDDD.Catalogo.Domain
         public bool Ativo { get; private set; }
         public Guid AvaliacaoId { get; private set; }
         public DateTime DataCadastro { get; private set; }
-        ICollection<Opcao> Opcoes { get; set; }
+        private readonly List<Opcao> _opcoes;
+
+        public IReadOnlyCollection<Opcao> Opcoes => _opcoes;
+
         #endregion
 
         #region Construtores
@@ -22,6 +25,7 @@ namespace LmsDDD.Catalogo.Domain
             Enunciado = enunciado;
             Ativo = ativo;
             DataCadastro = dataCadastro;
+            _opcoes = new List<Opcao>();
             Validar();
         }
 
@@ -33,9 +37,29 @@ namespace LmsDDD.Catalogo.Domain
         public void Ativar() => Ativo = true;
         public void Desativar() => Ativo = false;
 
+        internal void AdicionarOpcao(Opcao opcao)
+        {
+            _opcoes.Add(opcao);
+        }
+
+        internal void RemoverOpcao(Opcao opcao)
+        {
+            _opcoes.Remove(opcao);
+        }
+
         internal void AssociarAvaliacao(Guid avaliacaoId)
         {
             AvaliacaoId = avaliacaoId;
+        }
+
+        internal Opcao ObterOpcaoPorId(Guid opcaoID)
+        {
+           return _opcoes.Find(o => o.Id == opcaoID);
+        }
+
+        public int QuantidadeTotalOpcoes()
+        {
+            return _opcoes.Count;
         }
 
         #endregion
