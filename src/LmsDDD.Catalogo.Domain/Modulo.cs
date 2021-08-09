@@ -13,6 +13,7 @@ namespace LmsDDD.Catalogo.Domain
         public bool Ativo { get; private set; }
         public string Icone { get; private set; }
         public Guid CursoId { get; private set; }
+        //EF Ref
         public Curso Curso { get; private set; }
 
         private readonly List<Aula> _aulas;

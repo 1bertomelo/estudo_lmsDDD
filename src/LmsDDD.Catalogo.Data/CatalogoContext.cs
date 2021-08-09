@@ -32,8 +32,6 @@ namespace LmsDDD.Catalogo.Data
                 property.SetColumnType("varchar(100)");
             }
 
-            base.OnModelCreating(modelBuilder);
-
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(CatalogoContext).Assembly);
         }
 

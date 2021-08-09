@@ -1,5 +1,6 @@
 ﻿using LmsDDD.Core.DomainObjects;
 using System;
+using System.Collections.Generic;
 
 namespace LmsDDD.Catalogo.Domain
 {
@@ -18,11 +19,12 @@ namespace LmsDDD.Catalogo.Domain
         public CursoStatus CursoStatus { get; private set; }
         public Guid? AvaliacaoId { get; private set; }
         public Categoria Categoria { get; private set; }
-
+        //EF Ref
+        public ICollection<Modulo> Modulos { get; set; }
         #endregion
 
         #region Construtores
-        public Curso(string nome, string descricao, bool ativo, decimal valor, DateTime dataCadastro, string imagem, Guid categoriaId, CargaHoraria cargaHoraria)
+        public Curso(string nome, string descricao, bool ativo, decimal valor, DateTime dataCadastro, string imagem, Guid categoriaId, CargaHoraria cargaHoraria, Decimal mediaAprovacao)
         {
             Nome = nome;
             Descricao = descricao;
@@ -33,7 +35,7 @@ namespace LmsDDD.Catalogo.Domain
             CategoriaId = categoriaId;
             CargaHoraria = cargaHoraria;
             CursoStatus = CursoStatus.EmDesenvolvimento;
-
+            MediaAprovacao = mediaAprovacao;
             Validar();
         }
         //EF

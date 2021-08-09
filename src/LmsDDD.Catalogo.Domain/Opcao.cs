@@ -11,17 +11,21 @@ namespace LmsDDD.Catalogo.Domain
         public bool Ativo { get; set; }
         public bool Correta { get; set; }
         public DateTime DataCadastro { get; private set; }
+        public Guid QuestaoId { get; private set; }
+        //Relacionamento EF
+        public Questao Questao { get; set; }
+
         #endregion
 
         #region Construtores
-        public Opcao(int numero, string descricao, bool ativo, bool correta, DateTime dataCadastro)
+        public Opcao(int numero, string descricao, bool ativo, bool correta, DateTime dataCadastro, Guid questaoId)
         {
             Numero = numero;
             Descricao = descricao;
             Ativo = ativo;
             Correta = correta;
             DataCadastro = dataCadastro;
-
+            QuestaoId = questaoId;
             Validar();
         }
 

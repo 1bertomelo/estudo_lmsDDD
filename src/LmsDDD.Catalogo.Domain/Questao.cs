@@ -12,10 +12,13 @@ namespace LmsDDD.Catalogo.Domain
         public bool Ativo { get; private set; }
         public Guid AvaliacaoId { get; private set; }
         public DateTime DataCadastro { get; private set; }
+
         private readonly List<Opcao> _opcoes;
 
         public IReadOnlyCollection<Opcao> Opcoes => _opcoes;
 
+        //Relacionamento EF
+        public Avaliacao Avaliacao { get; set; }
         #endregion
 
         #region Construtores

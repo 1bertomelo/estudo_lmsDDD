@@ -29,11 +29,8 @@ namespace LmsDDD.Cadastros.Data
                 property.SetColumnType("varchar(100)");
             }
 
-            base.OnModelCreating(modelBuilder);
-
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(CadastroContext).Assembly);
         }
-
 
         public async Task<bool> Commit()
         {
