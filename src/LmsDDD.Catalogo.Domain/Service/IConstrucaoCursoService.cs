@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace LmsDDD.Catalogo.Domain.Service
 {
-    public interface ICursoService : IDisposable
+    public interface IConstrucaoCursoService : IDisposable
     {
         Task<bool> DisponibilizarCurso(Guid CursoId);
         Task<bool> IndisponibilizarCurso(Guid CursoId);

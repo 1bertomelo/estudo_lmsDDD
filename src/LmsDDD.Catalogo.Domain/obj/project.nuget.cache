@@ -1,8 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "hXV7DNEr4xlctKVypGJL87YRj23uiEEUvEC7UsA+5Hw/clchPazowW+eVOgBimY2Kvtot7HKMG98ZCP/mrlnXw==",
+  "dgSpecHash": "w43yPOdNhGy7c/VU5UQLDjARk3QDi3kQ7+y+S8uEIU257/sczzx/f+j396kVG1C5z+thct0E2j+rHYWKIqczUw==",
   "success": true,
   "projectFilePath": "E:\\cursos\\dominiosRicos\\projetoLmsDDD\\LmsDDD\\src\\LmsDDD.Catalogo.Domain\\LmsDDD.Catalogo.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\famil\\.nuget\\packages\\mailkit\\2.14.0\\mailkit.2.14.0.nupkg.sha512",
+    "C:\\Users\\famil\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\famil\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\famil\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "C:\\Users\\famil\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\famil\\.nuget\\packages\\mimekit\\2.14.0\\mimekit.2.14.0.nupkg.sha512",
+    "C:\\Users\\famil\\.nuget\\packages\\portable.bouncycastle\\1.8.10\\portable.bouncycastle.1.8.10.nupkg.sha512",
+    "C:\\Users\\famil\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\famil\\.nuget\\packages\\system.reflection.typeextensions\\4.4.0\\system.reflection.typeextensions.4.4.0.nupkg.sha512",
+    "C:\\Users\\famil\\.nuget\\packages\\system.security.cryptography.cng\\4.7.0\\system.security.cryptography.cng.4.7.0.nupkg.sha512",
+    "C:\\Users\\famil\\.nuget\\packages\\system.security.cryptography.pkcs\\4.7.0\\system.security.cryptography.pkcs.4.7.0.nupkg.sha512",
+    "C:\\Users\\famil\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512"
+  ],
   "logs": []
 }

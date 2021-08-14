@@ -34,6 +34,9 @@
             "projectReferences": {
               "E:\\cursos\\dominiosRicos\\projetoLmsDDD\\LmsDDD\\src\\LmsDDD.Core\\LmsDDD.Core.csproj": {
                 "projectPath": "E:\\cursos\\dominiosRicos\\projetoLmsDDD\\LmsDDD\\src\\LmsDDD.Core\\LmsDDD.Core.csproj"
+              },
+              "E:\\cursos\\dominiosRicos\\projetoLmsDDD\\LmsDDD\\src\\LmsDDD.Infrastructure.Components\\LmsDDD.Infrastructure.Components.csproj": {
+                "projectPath": "E:\\cursos\\dominiosRicos\\projetoLmsDDD\\LmsDDD\\src\\LmsDDD.Infrastructure.Components\\LmsDDD.Infrastructure.Components.csproj"
               }
             }
           }
@@ -46,6 +49,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.411\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -103,6 +112,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -118,7 +133,78 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.411\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\cursos\\dominiosRicos\\projetoLmsDDD\\LmsDDD\\src\\LmsDDD.Infrastructure.Components\\LmsDDD.Infrastructure.Components.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\cursos\\dominiosRicos\\projetoLmsDDD\\LmsDDD\\src\\LmsDDD.Infrastructure.Components\\LmsDDD.Infrastructure.Components.csproj",
+        "projectName": "LmsDDD.Infrastructure.Components",
+        "projectPath": "E:\\cursos\\dominiosRicos\\projetoLmsDDD\\LmsDDD\\src\\LmsDDD.Infrastructure.Components\\LmsDDD.Infrastructure.Components.csproj",
+        "packagesPath": "C:\\Users\\famil\\.nuget\\packages\\",
+        "outputPath": "E:\\cursos\\dominiosRicos\\projetoLmsDDD\\LmsDDD\\src\\LmsDDD.Infrastructure.Components\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\famil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "E:\\cursos\\dominiosRicos\\projetoLmsDDD\\LmsDDD\\src\\LmsDDD.Core\\LmsDDD.Core.csproj": {
+                "projectPath": "E:\\cursos\\dominiosRicos\\projetoLmsDDD\\LmsDDD\\src\\LmsDDD.Core\\LmsDDD.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[2.14.0, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
         }
       }
     }

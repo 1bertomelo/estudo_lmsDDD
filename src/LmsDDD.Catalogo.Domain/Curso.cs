@@ -78,22 +78,37 @@ namespace LmsDDD.Catalogo.Domain
             AvaliacaoId = avaliacaoId;
         }
 
-        public void IndisponibilizarCurso()
+        public void IniciarDesenvolvimentoCurso()
         {
-            CursoStatus = CursoStatus.InDisponivel;
-
+            CursoStatus = CursoStatus.EmDesenvolvimento;
         }
+
+        public void EnviarParaRevisaoCurso()
+        {
+            CursoStatus = CursoStatus.ParaRevisao;
+        }
+        public void RevisarCurso()
+        {
+            CursoStatus = CursoStatus.EmRevisao;
+        }
+
+        public void EnviarParaAprovacaoRevisao()
+        {
+            CursoStatus = CursoStatus.AguardandoAprovacaoRevisao;
+        }
+
 
         public void DisponibilizarCurso()
         {
             CursoStatus = CursoStatus.Disponivel;
         }
 
-        public void RevisarCurso()
+        public void IndisponibilizarCurso()
         {
-            CursoStatus = CursoStatus.EmRevisao;
-        }
+            CursoStatus = CursoStatus.InDisponivel;
 
+        }      
+        
         #endregion
 
         #region Validação
@@ -113,6 +128,23 @@ namespace LmsDDD.Catalogo.Domain
 
         #endregion
 
+
+        #region Factory
+        //por que factory? facilitar a criação de um objeto
+        //e principalmente associar a linguagem ubiquoa e dar um sentido
+        //mais claro, por exemplo, New Curso(......) nao expressa
+        //a intencao da linguagem ubiquoa claramente que é de criar um curso
+        public static class CursoFactory
+        {
+            public static Curso IniciarConstrucaoCurso()
+            {
+                var curso = new Curso();
+                curso.IniciarDesenvolvimentoCurso();
+                return curso;
+            }
+        }
+
+        #endregion
     }
 
 }

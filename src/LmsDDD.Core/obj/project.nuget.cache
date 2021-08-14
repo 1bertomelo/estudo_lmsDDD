@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "AeCXdLHtoX6Q3u+n96nO9iubRbxCPScSB01VZ3/3pi1dyI320bcgVIalY/AYMaYCYi+Pvi6i9Ws1PooPq26bCA==",
+  "dgSpecHash": "QTJ3EL6oHkGkAP3+RyBiKYd/5pD4w6j/GiXZrpvRDn09Va4YzPA4iBI8sVRG9WowZ5zAI5uYfYUeCV0gPk+96g==",
   "success": true,
   "projectFilePath": "E:\\cursos\\dominiosRicos\\projetoLmsDDD\\LmsDDD\\src\\LmsDDD.Core\\LmsDDD.Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\famil\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

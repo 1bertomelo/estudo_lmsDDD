@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "hAH2/D9fdzwtOr8lJC/ZTGG/846yTP4fkCETsSmP92fBqnjn79hlBbXR14KAzmD2hIgRBnV4pVJ93fSoT005Fg==",
+  "dgSpecHash": "wvRDNJOEO3W35T2X9is4bFW0YMaf9BmH338VlwESfpR/7TMrz/AoIblusqh1uMEFQaTII1VkT2tyQ/qtE278Tg==",
   "success": true,
   "projectFilePath": "E:\\cursos\\dominiosRicos\\projetoLmsDDD\\LmsDDD\\src\\LmsDDD.Cadastros.Domain\\LmsDDD.Cadastros.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\famil\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
