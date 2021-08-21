@@ -45,9 +45,9 @@ namespace LmsDDD.Catalogo.Domain
         #region Validações
         public void Validar()
         {
-            Validacoes.ValidarSeMenorQue(Hora, 1, "Hora não pode ser menor que zero.");
-            Validacoes.ValidarSeMenorQue(Minuto, 1, "Minuto não pode ser menor que zero.");
-
+            Validacoes.ValidarSeMenorQue(Hora, 0, "Hora não pode ser menor que zero.");
+            Validacoes.ValidarMinimoMaximo(Minuto, 0, 59, "Minuto deve ser entre 0 e 59.");
+            
         }
         #endregion
 

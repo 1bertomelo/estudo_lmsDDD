@@ -57,19 +57,19 @@ namespace LmsDDD.Catalogo.Domain
 
         public void AlterarDescricao(String descricao)
         {
-            Validacoes.ValidarSeVazio(descricao, "O campo descricao do Curso não pode ser vazio.");
+            Validacoes.ValidarSeVazio(descricao, "O campo Descricao do Curso não pode estar vazio!");
             Descricao = descricao;
         }
 
         public void AlterarValor(decimal valor)
         {
-            Validacoes.ValidarSeMenorIgualQue(valor, 0,"O campo valor do Curso não pode menor ou igual a zero.");
+            Validacoes.ValidarSeMenorIgualQue(valor, 0, "O valor do Curso não pode ser menor ou igual a zero");
             Valor = valor;
         }
 
         public void AlterarMediaAprovacao(decimal mediaAprovacao)
         {
-            Validacoes.ValidarSeMenorIgualQue(mediaAprovacao, 0, "O campo MediaAprovação do Curso não pode menor ou igual a zero.");
+            Validacoes.ValidarSeMenorQue(mediaAprovacao, 0, "A MediaAprovacao do Curso não pode ser menor que zero");
             MediaAprovacao = mediaAprovacao;
         }
 
@@ -118,9 +118,9 @@ namespace LmsDDD.Catalogo.Domain
         {
             Validacoes.ValidarSeVazio(Nome, "O campo Nome do Curso não pode estar vazio!");
             Validacoes.ValidarSeVazio(Descricao, "O campo Descricao do Curso não pode estar vazio!");
-            Validacoes.ValidarSeDiferente(CategoriaId, Guid.Empty, "O campo CategoriaId do Curso não pode estar vazio!");
+            Validacoes.ValidarSeIgual(CategoriaId, Guid.Empty, "O campo CategoriaId do Curso não pode estar vazio!");
             Validacoes.ValidarSeMenorIgualQue(Valor, 0, "O valor do Curso não pode ser menor ou igual a zero");
-            Validacoes.ValidarSeMenorIgualQue(MediaAprovacao, 0, "A MediaAprovacao do Curso não pode ser menor ou igual a zero");
+            Validacoes.ValidarSeMenorQue(MediaAprovacao, 0, "A MediaAprovacao do Curso não pode ser menor que zero");
             Validacoes.ValidarSeVazio(Imagem, "O campo Imagem do Curso não pode estar vazio!");
 
 
