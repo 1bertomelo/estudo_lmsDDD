@@ -13,11 +13,11 @@ namespace LmsDDD.Catalogo.Application.Services
         Task<IEnumerable<CategoriaViewModel>> ObterCategorias();
         Task AdicionarCurso(CursoViewModel cursoViewModel);
         Task AtualizarCurso(CursoViewModel cursoViewModel);
-        Task<bool> EnviarParaRevisaoCurso(Guid id);
-        Task<bool> RevisarCurso(Guid id);
-        Task<bool> EnviarParaAprovarRevisao(Guid id);
-        Task<bool> DisponibilizarCurso(Guid id);
-        Task<bool> IndisponibilizarCurso(Guid id);
+        Task<CursoViewModel> EnviarParaRevisaoCurso(Guid id);
+        Task<CursoViewModel> RevisarCurso(Guid id);
+        Task<CursoViewModel> EnviarParaAprovarRevisao(Guid id);
+        Task<CursoViewModel> DisponibilizarCurso(Guid id);
+        Task<CursoViewModel> IndisponibilizarCurso(Guid id);
 
     }
 }

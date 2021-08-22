@@ -45,7 +45,11 @@ namespace LmsDDD.Catalogo.Application.ViewModels
         [Range(1, int.MaxValue, ErrorMessage = "O campo {0} precisa ter o valor mínimo de {1} e máximo de {2}")]
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         public int CursoStatus { get; set; }
-        
+
+        [Range(0, 100, ErrorMessage = "O campo {0} precisa ter o valor mínimo de {1} e máximo de {2}")]
+        [Required(ErrorMessage = "O campo {0} é obrigatório")]
+        public decimal MediaAprovacao { get; set; }
+
         public IEnumerable<CategoriaViewModel> Categorias { get; set; }
     }
 }
