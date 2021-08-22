@@ -20,7 +20,6 @@ namespace LmsDDD.Cadastros.Domain
         public Empresa Empresa { get; private set; }
         public Guid? CredencialSistemaId { get; private set; }
 
-        public CredencialSistema CredencialSistema { get; private set; }
         #endregion
 
         #region construtores
@@ -29,7 +28,7 @@ namespace LmsDDD.Cadastros.Domain
 
         }
 
-        public Colaborador(string nome, Cpf cpf, DateTime dataCadastro, bool ativo, DateTime dataAdmissao,  Guid cargoId, Guid empresaId, CredencialSistema credencialSistema)
+        public Colaborador(string nome, Cpf cpf, DateTime dataCadastro, bool ativo, DateTime dataAdmissao,  Guid cargoId, Guid empresaId, Guid credencialSistemaId)
         {
             Nome = nome;
             Cpf = cpf;
@@ -38,7 +37,7 @@ namespace LmsDDD.Cadastros.Domain
             DataAdmissao = dataAdmissao;
             CargoId = cargoId;
             EmpresaId = empresaId;
-            CredencialSistema = credencialSistema;
+            CredencialSistemaId = credencialSistemaId;
         }
 
         #endregion

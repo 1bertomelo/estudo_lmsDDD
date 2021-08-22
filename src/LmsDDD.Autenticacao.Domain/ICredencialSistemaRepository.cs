@@ -1,9 +1,10 @@
 ﻿using LmsDDD.Core.Data;
 using System;
 using System.Collections.Generic;
+using System.Text;
 using System.Threading.Tasks;
 
-namespace LmsDDD.Cadastros.Domain
+namespace LmsDDD.Autenticacao.Domain
 {
     public interface ICredencialSistemaRepository : IRepository<CredencialSistema>
     {
@@ -15,4 +16,5 @@ namespace LmsDDD.Cadastros.Domain
         void Atualizar(CredencialSistema credencialSistema);
 
     }
+
 }

@@ -1,9 +1,7 @@
 ﻿using LmsDDD.Core.DomainObjects;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace LmsDDD.Cadastros.Domain
+namespace LmsDDD.Autenticacao.Domain
 {
     public class CredencialSistema : Entity, IAggregateRoot
     {
@@ -29,7 +27,7 @@ namespace LmsDDD.Cadastros.Domain
         {
             Usuario = usuario;
             Senha = senha;
-            AlteraSenhaProximoLogin = alteraSenhaProximoLogin ;
+            AlteraSenhaProximoLogin = alteraSenhaProximoLogin;
             QtdeTentativasLogin = qtdeTentativasLogin;
         }
 
@@ -44,7 +42,7 @@ namespace LmsDDD.Cadastros.Domain
         public void AdicionarQtdeTentativasLogin()
         {
             QtdeTentativasLogin++;
-            if( QtdeTentativasLogin == NumeroMaximoTentativas)
+            if (QtdeTentativasLogin == NumeroMaximoTentativas)
             {
                 Bloquear();
             }
@@ -61,7 +59,7 @@ namespace LmsDDD.Cadastros.Domain
 
         public void ZerarQtdeTentativasLogin()
         {
-            QtdeTentativasLogin = 0;            
+            QtdeTentativasLogin = 0;
         }
 
         public void AlterarSenha(string novaSenha)
@@ -102,4 +100,5 @@ namespace LmsDDD.Cadastros.Domain
 
         #endregion
     }
+
 }

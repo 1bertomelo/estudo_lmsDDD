@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 using System.Threading.Tasks;
 
-namespace LmsDDD.Cadastros.Domain.Service
+namespace LmsDDD.Autenticacao.Domain.Service
 {
     public interface IAutenticacaoService : IDisposable
     {

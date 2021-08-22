@@ -8,8 +8,4 @@
     <ProjectReference Include="..\LmsDDD.Core\LmsDDD.Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Service\" />
-  </ItemGroup>
-
 </Project>
