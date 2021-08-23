@@ -32,7 +32,6 @@ namespace LmsDDD.Catalogo.Application.ViewModels
 
         public Guid? AvaliacaoId { get; private set; }
 
-
         [Range(1, int.MaxValue, ErrorMessage = "O campo {0} precisa ter o valor mínimo de {1}")]
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         public int Hora { get; set; }
@@ -40,7 +39,6 @@ namespace LmsDDD.Catalogo.Application.ViewModels
         [Range(1, 59, ErrorMessage = "O campo {0} precisa ter o valor mínimo de {1} e máximo de {2}")]
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         public int Minuto { get; set; }
-
 
         [Range(1, int.MaxValue, ErrorMessage = "O campo {0} precisa ter o valor mínimo de {1} e máximo de {2}")]
         [Required(ErrorMessage = "O campo {0} é obrigatório")]

@@ -16,6 +16,11 @@ namespace LmsDDD.Catalogo.Application.AutoMapper
                 .ForMember(d => d.Minuto, o => o.MapFrom(s => s.CargaHoraria.Minuto));
                 
             CreateMap<Categoria, CategoriaViewModel>();
+
+            CreateMap<Avaliacao, AvaliacaoViewModel>();
+            CreateMap<Questao, QuestaoViewmodel>();
+            CreateMap<Opcao, OpcaoViewModel>();
+
         }
     }
 }

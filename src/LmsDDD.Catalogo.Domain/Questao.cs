@@ -22,12 +22,13 @@ namespace LmsDDD.Catalogo.Domain
         #endregion
 
         #region Construtores
-        public Questao(int numero, string enunciado, bool ativo, DateTime dataCadastro)
+        public Questao(int numero, string enunciado, bool ativo, DateTime dataCadastro, Guid avaliacaoId)
         {
             Numero = numero;
             Enunciado = enunciado;
             Ativo = ativo;
             DataCadastro = dataCadastro;
+            AvaliacaoId = avaliacaoId;
             _opcoes = new List<Opcao>();
             Validar();
         }

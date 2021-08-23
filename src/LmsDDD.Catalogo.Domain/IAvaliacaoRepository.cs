@@ -12,12 +12,13 @@ namespace LmsDDD.Catalogo.Domain
         void Atualizar(Avaliacao avaliacao);
 
         Task<IEnumerable<Questao>> ObterQuestoesPorAvaliacao(Guid AvaliacaoId);
-        Task<Questao> ObterQuestaoPorId(Guid Id);
+        Task<Questao> ObterQuestaoPorId(Guid id);
         void AdicionarQuestao(Questao questao);
         void AtualizarQuestao(Questao questao);
         void RemoverQuestao(Questao questao);
 
-        Task<IEnumerable<Questao>> ObterOpcoesPorQuestao(Guid QuestaoId);
+        Task<Opcao> ObterOpcaoPorId(Guid id);
+        Task<IEnumerable<Opcao>> ObterOpcoesPorQuestao(Guid QuestaoId);
         void AdicionarQuestaoOpcao(Opcao opcao);
         void AtualizarQuestaoOpcao(Opcao opcao);
         void RemoverQuestaoOpcao(Opcao opcao);
